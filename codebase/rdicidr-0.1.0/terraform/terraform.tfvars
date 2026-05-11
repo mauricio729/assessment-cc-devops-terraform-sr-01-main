@@ -1,0 +1,1 @@
+bucket_name = "eclectic-react-bucket-assesment"
