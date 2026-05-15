@@ -31,8 +31,11 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Run Prettier
-        run: npm run prettier
+      - name: Install Prettier
+  run: npm install --save-dev prettier
+
+- name: Run Prettier
+  run: npm run prettier
 
       - name: Run Tests
         run: CI=true npm run test
