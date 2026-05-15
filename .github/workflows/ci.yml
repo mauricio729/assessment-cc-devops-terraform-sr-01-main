@@ -28,14 +28,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Prettier
+        run: npm install --save-dev prettier
+
       - name: Run ESLint
         run: npm run lint
 
-      - name: Install Prettier
-  run: npm install --save-dev prettier
-
-- name: Run Prettier
-  run: npm run prettier
+      - name: Run Prettier
+        run: npm run prettier
 
       - name: Run Tests
         run: CI=true npm run test
